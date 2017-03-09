@@ -3,12 +3,13 @@ var router = express.Router();
 //this is some data we found that shows the number of refugees accepted into countries and the country of origin
 var parsedJSON = require('../data/byCountryOfOrigin.json');
 
-var countries = require('../../../data/countries');
+var countries = require('../data/countries');
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Humanwire Refugee Application' });
 });
 
+//this is main route to enter form
 router.get('/personal-info', function(req, res, next) {
   res.render('personal-info', { title: 'Humanwire Refugee Application', countries: countries });
 });
@@ -27,6 +28,7 @@ router.get('/private-info', function(req, res, next) {
 });
 
 router.post('/match', function(req, res, next) {
+  //when user posts form, go here to run though country db matches
   var userData = req.body;
   if(parsedJSON.Country === userData.Country){
 

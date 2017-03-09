@@ -9,5 +9,8 @@ The major problem/gap we identified was the lack of cohesion in country data. In
 Our app seeks to simplify the form process and then match applicants to countries based on the priority level of certain fields on the country database schema.
 
 
-
-
+## To run app:
+1. git clone
+1. npm install
+1. run gulp in terminal to start node server and launch app in browser
+1. main route to navigate to in browser is ```/personal-info```
