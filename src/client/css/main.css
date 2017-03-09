@@ -1,8 +1,28 @@
 body {
-  padding: 50px;
+  padding: 0 50px;
+  background-color: #FF6600;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.content {
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.title {
+  color: #FF6600;
+}
+
+.form {
+  margin: 0 auto;
 }
