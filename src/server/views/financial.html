@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<h3>Travel information</h3>
+<p>Are you in possession of any of the following documents:</p>
+<form action="">
+  <input type="radio" name="" value=""> Passport<br>
+  <input type="radio" name="" value=""> Birth certificate<br>
+  <input type="radio" name="" value=""> Local identification<br>
+  <input type="radio" name="" value="">Driver's license<br>
+</form>
+<p>Are there any preferred countries:</p>
+<select>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<p>Please select your preferred countries:</p>
+<p>Why are these countries preferred? (family, culture, language etc.)</p>
+<textarea rows="4" cols="50">
+</textarea>
+<p>Are you seeking citizenship?</p>
+<select>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<br><a href="/background">Previous</a>
+<a href="/private-info">Next</a>
+
+{% endblock %}

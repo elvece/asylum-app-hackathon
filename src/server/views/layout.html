@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    {% block content %}
-    {% endblock %}
+
+    <div class="content">
+      <div class="main">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="https://www.humanwire.org/wp-content/uploads/2015/11/logo-transparent.png">
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <h1 class="title">Humanwire Refugee Application</h1>
+            </div>
+            <div class="row">
+              <h3>Connect. Support. Live.</h3>
+            </div>
+            </div>
+          </div>
+
+        <div class="row form">
+          {% block content %}
+          {% endblock %}
+        </div>
+
+      </div>
+
+
+    </div>
+
+
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
