@@ -1,8 +1,11 @@
-<html>
-	<head>
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
 	<h1>Refugee Form</h1>
-	</head>
-	<body>
 		<h3>Personal Information</h3>
 		<form action="/action_page.php">
 		First name:<br>
@@ -17,5 +20,4 @@
 		<input type="submit" value="Submit">
 		</form>
 
-	</body>
-</html>
+{% endblock %}
